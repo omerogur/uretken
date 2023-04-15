@@ -1,0 +1,75 @@
+
+.btn {
+    padding: 2rem;
+    border: 2px solid teal;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  /* Küçük ekranlar için buton boyutları */
+  @media (max-width: 768px) {
+    .btn {
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+    h1{
+        font-size: 1.2rem !important;
+     
+    }
+  }
+  
+  /* Büyük ekranlar için buton boyutları */
+  @media (min-width: 1200px) {
+    .btn {
+      padding: 2rem;
+      font-size: 1.2rem;
+    }
+  }
+  
+
+  @media (max-width: 576px) { /* 576px, Bootstrap'in xs ekran boyutudur */
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4; /* Kısaltılmış metnin maksimum satır sayısı */
+      -webkit-box-orient: vertical;
+    }
+    p:hover{
+        overflow: visible;
+        -webkit-line-clamp: 14; /* Kısaltılmış metnin maksimum satır sayısı */
+        -webkit-box-orient: vertical;
+    }
+  }
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+    color:"red"
+}
+
+.description {
+    max-height: 100px;
+    overflow: hidden;
+  }
+  
+  .showMore {
+    max-height: none;
+  }
+  
+  .readMoreBtn {
+    display: block;
+    margin-top: 1rem;
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .readMoreBtn.hidden {
+    display: none;
+  }
+  

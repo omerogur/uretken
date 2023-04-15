@@ -1,0 +1,9 @@
+.navbar-nav {
+  font-size: 1.6rem;
+  
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} 
